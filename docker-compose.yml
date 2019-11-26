@@ -1,0 +1,12 @@
+version: '3'
+services:
+  react-app:
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+
+    ports: 
+      - "4000:3000"
+    volumes:
+      - /home/dineshs/teezle/workspace/docker/Reentry/react-app/dev-app/node_modules
+      - .:/home/dineshs/teezle/workspace/docker/Reentry/react-app/dev-app
