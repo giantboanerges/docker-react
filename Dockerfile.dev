@@ -1,7 +1,6 @@
 
 FROM node:10.15-alpine
 
-RUN apk add --no-cache bash
 
 WORKDIR '/home/dineshs/teezle/workspace/docker/Reentry/react-app/dev-app'
 
