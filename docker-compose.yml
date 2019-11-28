@@ -10,3 +10,12 @@ services:
     volumes:
       - /home/dineshs/teezle/workspace/docker/Reentry/react-app/dev-app/node_modules
       - .:/home/dineshs/teezle/workspace/docker/Reentry/react-app/dev-app
+  test:
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+
+    volumes:
+      - /home/dineshs/teezle/workspace/docker/Reentry/react-app/dev-app/node_modules
+      - .:/home/dineshs/teezle/workspace/docker/Reentry/react-app/dev-app
+    command: ["npm", "run", "test"]
